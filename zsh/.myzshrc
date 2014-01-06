@@ -1,0 +1,40 @@
+# alias for ls
+alias ls="ls -GF"
+alias l="ls -l"
+alias la="l -a"
+
+# alias for git
+alias gls="git ls-files"
+
+# alias for emacs
+alias em="emacs"
+alias e="emacs"
+
+# alias for vim
+alias v="vim"
+
+# alias for gcc
+alias c="gcc"
+alias g="gcc -Wall -Werror -Wextra"
+alias gg="g -g"
+
+# alias for lockscreen
+alias lc="lockscreen"
+
+# alias for auteur
+alias auteur="echo 'mde-jesu' > auteur"
+alias au="auteur"
+
+# colored-man
+man()
+{
+      env \
+	  LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+	  LESS_TERMCAP_md=$(printf "\e[1;31m") \
+	  LESS_TERMCAP_me=$(printf "\e[0m") \
+	  LESS_TERMCAP_se=$(printf "\e[0m") \
+	  LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+	  LESS_TERMCAP_ue=$(printf "\e[0m") \
+	  LESS_TERMCAP_us=$(printf "\e[1;32m") \
+				man "$@"
+}

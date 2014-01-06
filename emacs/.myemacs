@@ -1,0 +1,8 @@
+(setq-default font-lock-global-modes t)
+(setq-default line-number-mode t)
+(setq-default column-number-mode t)
+(setq show-trailing-whitespace t)
+(setq-default show-trailing-whitespace t)
+(require 'paren)
+(show-paren-mode)
+(global-linum-mode 1)
