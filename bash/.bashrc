@@ -1,10 +1,4 @@
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin
 HISTFILE=~/.bashrc_history
-SAVEHIST=5000
-HISTSIZE=5000
-
-setopt inc_append_history
-setopt share_history
 
 if [[ -f ~/.mybashrc ]]; then
   source ~/.mybashrc
