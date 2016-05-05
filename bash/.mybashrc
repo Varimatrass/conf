@@ -1,3 +1,9 @@
+# alias for ssh
+alias mantal="ssh varimatrass@62.210.116.129"
+
+# alias for this fucking monitor
+alias fck='xset dpms force off; xset dpms force on'
+
 # alias for ls
 alias ls="ls --color=auto"
 alias l="ls -l"
@@ -5,19 +11,26 @@ alias la="l -a"
 
 # alias for rm
 alias Rf="rm -Rf"
+alias rms="rm *.cmi; rm *.cmx; rm *.o; rm a.out; echo 'rm sheets OK'"
 
 # alis for cd
 alias doc="cd ~/Documents"
+alias prg="cd ~/Documents/prog/"
+alias bp="cd ~/Documents/prog/bigwebproj"
 
 # alias for git
 alias gls="git ls-files"
 
 # alias for emacs
+alias emacs="emacs -nw"
 alias em="emacs"
 alias e="emacs"
 
 # alias for vim
 alias v="vim"
+
+# alias for ocaml
+alias coo=ocamlopt
 
 # alias for gcc
 alias c="gcc"
@@ -30,6 +43,9 @@ alias lc="lockscreen"
 # alias for auteur
 alias auteur="echo 'mde-jesu' > auteur"
 alias au="auteur"
+
+# alias nodemon
+alias nodemon=/usr/bin/nodemon
 
 # colored-man
 man()
