@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Volumes/DATA/nfs/zfs-student-3/users/2013/mde-jesu/Documents/prog/ft_select/rendu'
-let g:netrw_dirhist_2='/Volumes/DATA/nfs/zfs-student-3/users/2013/mde-jesu/Documents/prog/ft_sh1'
-let g:netrw_dirhist_3='/Volumes/DATA/nfs/zfs-student-3/users/2013/mde-jesu/Documents/prog/ft_sh1/rendu'
-let g:netrw_dirhist_4='/Volumes/DATA/nfs/zfs-student-3/users/2013/mde-jesu/Documents/prog/ft_sh1/rendu/srcs'
-let g:netrw_dirhist_5='/Volumes/DATA/nfs/zfs-student-3/users/2013/mde-jesu/Documents/prog/ft_sh1/rendu'
-let g:netrw_dirhist_6='/Volumes/DATA/nfs/zfs-student-3/users/2013/mde-jesu/Documents/prog/ft_sh1/rendu/srcs'
