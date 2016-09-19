@@ -1,7 +1,23 @@
+export PATH=$HOME/.brew/bin:$PATH
+
+# Si brew est casse -> https://github.com/kube/42homebrewfix
+
 # alias for ls
 alias ls="ls -GF"
 alias l="ls -l"
 alias la="l -a"
+
+# alias ocaml
+alias oo="ocamlopt.opt"
+
+# alias for rm
+alias Rf='rm -Rf'
+
+# alias for ssh
+alias mantal="ssh varimatrass@62.210.116.129"
+
+# alias for cd
+alias prg='cd ~/Documents/prog/'
 
 # alias for git
 alias gls="git ls-files"
@@ -18,9 +34,6 @@ alias c="gcc"
 alias g="gcc -Wall -Werror -Wextra"
 alias gg="g -g"
 
-# alias for lockscreen
-alias lc="lockscreen"
-
 # alias for auteur
 alias auteur="echo 'mde-jesu' > auteur"
 alias au="auteur"
@@ -28,13 +41,13 @@ alias au="auteur"
 # colored-man
 man()
 {
-      env \
-	  LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-	  LESS_TERMCAP_md=$(printf "\e[1;31m") \
-	  LESS_TERMCAP_me=$(printf "\e[0m") \
-	  LESS_TERMCAP_se=$(printf "\e[0m") \
-	  LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-	  LESS_TERMCAP_ue=$(printf "\e[0m") \
-	  LESS_TERMCAP_us=$(printf "\e[1;32m") \
-				man "$@"
+	env \
+		LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+		LESS_TERMCAP_md=$(printf "\e[1;31m") \
+		LESS_TERMCAP_me=$(printf "\e[0m") \
+		LESS_TERMCAP_se=$(printf "\e[0m") \
+		LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+		LESS_TERMCAP_ue=$(printf "\e[0m") \
+		LESS_TERMCAP_us=$(printf "\e[1;32m") \
+		man "$@"
 }

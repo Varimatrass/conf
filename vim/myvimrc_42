@@ -1,0 +1,37 @@
+" **************************************************************************** "
+"                                                                              "
+"                                                         :::      ::::::::    "
+"    .myvimrc                                           :+:      :+:    :+:    "
+"                                                     +:+ +:+         +:+      "
+"    By: zaz <zaz@staff.42.fr>                      +#+  +:+       +#+         "
+"                                                 +#+#+#+#+#+   +#+            "
+"    Created: 2013/06/15 12:36:36 by zaz               #+#    #+#              "
+
+"                                                                              "
+" **************************************************************************** "
+
+"Put your custom Vim configuration here
+
+"Better command completion
+"set wildmenu
+"set wildmode=list:longest
+
+"Show current line
+"set cursorline
+
+set t_Co=256
+syntax on
+set number
+set mouse=a
+colorscheme desert
+au BufWinEnter * let w:m2=matchadd('Tab', '\t', -1)
+au BufWinEnter * let w:m3=matchadd('Space', '\s\+$\| \+\ze\t', -1)
+set list listchars=tab:▸\ ,trail:·
+highlight Tab ctermbg=none guibg=none
+highlight Space ctermbg=darkred guibg=darkred
+
+runtime! config/**/*.vim
+
+" Initialisation de pathogen
+call pathogen#infect()
+call pathogen#helptags()
