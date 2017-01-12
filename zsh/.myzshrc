@@ -2,6 +2,9 @@ export PATH=$HOME/.brew/bin:$PATH
 
 # Si brew est casse -> https://github.com/kube/42homebrewfix
 
+# lockscreen
+alias lc='open -a /System/Library/Frameworks/ScreenSaver.framework//Versions/A/Resources/ScreenSaverEngine.app'
+
 # alias for ls
 alias ls="ls -GF"
 alias l="ls -l"
@@ -33,6 +36,9 @@ alias v="vim"
 alias c="gcc"
 alias g="gcc -Wall -Werror -Wextra"
 alias gg="g -g"
+
+# alias unity
+alias ms="mkdir Scenes Scripts Sprites Prefabs Sounds Models"
 
 # alias for auteur
 alias auteur="echo 'mde-jesu' > auteur"
