@@ -14,15 +14,15 @@ myrc=".myzshrc"
 #echo -e $trucs >> ~/$rc
 
 #liens symbolique pour myrc
-ln -s ~/conf/zsh/$myrc ~/$myrc
+ln -fs ~/conf/zsh/$myrc ~/$myrc
 
 #liens symbolique de .gitconfig et .gitignore_global
-ln -s ~/conf/gitconf/.gitconfig ~/.gitconfig
-ln -s ~/conf/gitconf/.gitignore_global ~/.gitignore_global
+ln -fs ~/conf/gitconf/.gitconfig ~/.gitconfig
+ln -fs ~/conf/gitconf/.gitignore_global ~/.gitignore_global
 
 #echo du source vimrc dans vimrc
 #echo -e $trucsvim >> /etc/vim/vimrc
 
 #liens symbolique de vimrc et myvimrc
 #ln -s ~/conf/vim/vimrc ~/.vimrc
-ln -s ~/conf/vim/myvimrc_42 ~/.myvimrc
+ln -fs ~/conf/vim/myvimrc_42 ~/.myvimrc
