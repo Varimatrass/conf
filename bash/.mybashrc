@@ -5,7 +5,7 @@ alias mantal="ssh varimatrass@62.210.116.129"
 alias fck='xset dpms force off; xset dpms force on'
 
 # alias for ls
-alias ls="ls --color=auto"
+alias ls="ls --color=auto -F"
 alias l="ls -l"
 alias la="l -a"
 

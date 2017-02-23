@@ -7,13 +7,12 @@ apt-get install gcc
 apt-get install g++
 
 # ------------------ vars ---------------
-trucs="\nif [[ -f ~/$myrc ]]; then\n  source ~/.$myrc\nfi\n\nUSER='mde-jesu'\nexport USER\nMAIL=\"\$USER@student.42.fr\"\nexport MAIL\n"
-
-trucsvim="\nif filereadable(\"$HOME/.vimrc\")\n  source $HOME/.vimrc\nendif\n"
-
 rc=".bashrc"
 myrc=".mybashrc"
 
+trucs="\nif [[ -f ~/$myrc ]]; then\n  source ~/$myrc\nfi\n\nUSER='mde-jesu'\nexport USER\nMAIL=\"\$USER@student.42.fr\"\nexport MAIL\n"
+
+trucsvim="\nif filereadable(\"$HOME/.vimrc\")\n  source $HOME/.vimrc\nendif\n"
 # --------------------------------------
 
 #echo de $truc dans rc
