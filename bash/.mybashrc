@@ -37,6 +37,11 @@ alias c="gcc"
 alias g="gcc -Wall -Werror -Wextra"
 alias gg="g -g"
 
+# for laravel
+if [ -d "$HOME/.config/composer/vendor/bin" ] ; then
+	export PATH=$PATH:$HOME/.config/composer/vendor/bin
+fi
+
 # alias for auteur
 alias auteur="echo 'mde-jesu' > auteur"
 alias au="auteur"
@@ -44,13 +49,13 @@ alias au="auteur"
 # colored-man
 man()
 {
-      env \
-	  LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-	  LESS_TERMCAP_md=$(printf "\e[1;31m") \
-	  LESS_TERMCAP_me=$(printf "\e[0m") \
-	  LESS_TERMCAP_se=$(printf "\e[0m") \
-	  LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-	  LESS_TERMCAP_ue=$(printf "\e[0m") \
-	  LESS_TERMCAP_us=$(printf "\e[1;32m") \
-				man "$@"
+	env \
+		LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+		LESS_TERMCAP_md=$(printf "\e[1;31m") \
+		LESS_TERMCAP_me=$(printf "\e[0m") \
+		LESS_TERMCAP_se=$(printf "\e[0m") \
+		LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+		LESS_TERMCAP_ue=$(printf "\e[0m") \
+		LESS_TERMCAP_us=$(printf "\e[1;32m") \
+		man "$@"
 }
