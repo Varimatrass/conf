@@ -19,15 +19,15 @@ trucsvim="\nif filereadable(\"$HOME/.vimrc\")\n  source $HOME/.vimrc\nendif\n"
 echo -e $trucs >> ~/$rc
 
 #liens symbolique pour myrc
-ln -s ~/conf/bash/$myrc ~/$myrc
+ln -sf ~/conf/bash/$myrc ~/$myrc
 
 #liens symbolique de .gitconfig et .gitignore_global
-ln -s ~/conf/gitconf/.gitconfig ~/.gitconfig
-ln -s ~/conf/gitconf/.gitignore_global ~/.gitignore_global
+ln -sf ~/conf/gitconf/.gitconfig ~/.gitconfig
+ln -sf ~/conf/gitconf/.gitignore_global ~/.gitignore_global
 
 #echo du source vimrc dans vimrc
 echo -e $trucsvim >> /etc/vim/vimrc
 
 #liens symbolique de vimrc et myvimrc
-ln -s ~/conf/vim/vimrc ~/.vimrc
-ln -s ~/conf/vim/.myvimrc ~/.myvimrc
+ln -sf ~/conf/vim/vimrc ~/.vimrc
+ln -sf ~/conf/vim/.myvimrc ~/.myvimrc
