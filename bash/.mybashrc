@@ -8,6 +8,7 @@ alias fck='xset dpms force off; xset dpms force on'
 alias ls="ls --color=auto -F"
 alias l="ls -l"
 alias la="l -a"
+alias lag="la --group-directories-first"
 
 # alias for rm
 alias Rf="rm -Rf"
@@ -16,7 +17,6 @@ alias rms="rm *.cmi; rm *.cmx; rm *.o; rm a.out; echo 'rm sheets OK'"
 # alis for cd
 alias doc="cd ~/Documents"
 alias prg="cd ~/Documents/prog/"
-alias bp="cd ~/Documents/prog/bigwebproj"
 
 # alias for git
 alias gls="git ls-files"
@@ -37,15 +37,9 @@ alias c="gcc"
 alias g="gcc -Wall -Werror -Wextra"
 alias gg="g -g"
 
-# alias for lockscreen
-alias lc="lockscreen"
-
 # alias for auteur
 alias auteur="echo 'mde-jesu' > auteur"
 alias au="auteur"
-
-# alias nodemon
-alias nodemon=/usr/bin/nodemon
 
 # colored-man
 man()
