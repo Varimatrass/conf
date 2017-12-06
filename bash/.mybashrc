@@ -17,6 +17,7 @@ alias rms="rm *.cmi; rm *.cmx; rm *.o; rm a.out; echo 'rm sheets OK'"
 # alis for cd
 alias doc="cd ~/Documents"
 alias prg="cd ~/Documents/prog/"
+alias ol="cd /var/www/olystic "
 
 # alias for git
 alias gls="git ls-files"
