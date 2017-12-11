@@ -19,6 +19,12 @@ alias doc="cd ~/Documents"
 alias prg="cd ~/Documents/prog/"
 alias ol="cd /var/www/olystic "
 
+if [ -d "$HOME/Downloads" ] ; then
+	alias dow="cd ~/Downloads"
+else
+	alias dow="cd ~/Téléchargements"
+fi
+
 # alias for git
 alias gls="git ls-files"
 
